@@ -53,7 +53,7 @@ int main()
     kernel_console_init();
 
     thread_t test_runner;
-    kernel_thread_create_active(&test_runner, testic, NULL, 0);
+    kernel_thread_create_active(&test_runner, userTests, NULL, 0);
     intr_restore(1);
     kernel_scheduler();
     return 0;
