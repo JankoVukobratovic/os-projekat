@@ -4,6 +4,9 @@
 
 #include "../h/kernel_synchronized.h"
 
+#include "../h/kernel_atomics.h"
+#include "../h/kernel_mem.h"
+
 int kernel_rw_buffer_close(rw_buffer_t handle)
 {
     if (!handle) return -1;
